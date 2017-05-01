@@ -1,0 +1,44 @@
+page-login {
+  mg{
+    height: 20vh;
+    width: auto;
+    margin: auto;
+    display: block;
+  }
+
+  ion-label{
+    font-size: 21px;
+  }
+
+  .link-recovery {
+    margin-top: 1em !important;
+    display: block;
+    text-decoration: none;
+    color: #929292;
+  }
+
+  .login-redes{
+    display: block;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    padding-left: 2em;
+  }
+
+  .login-redes > a{
+    font-size: 3em;
+    margin: 3em 0.3em 0.5em 0.3em;
+    padding: 0.3em 0.3em 0.2em 0.3em;
+    box-shadow: 2px 3px 5px #adadad;
+    border-radius: 20%;
+    color: white; 
+  }
+  .logo-google{
+    background-color: #DD4D40;
+  }
+  .logo-facebook{
+    background-color: #3C5899;
+  }
+  .logo-twitter{
+    background-color: #55ACEE;
+  }
+}

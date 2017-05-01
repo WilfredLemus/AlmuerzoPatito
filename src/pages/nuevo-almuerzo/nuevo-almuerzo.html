@@ -1,0 +1,32 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Nuevo Almuerzo</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <form (submit)="AddAlmuerzo()">
+    <ion-list>
+      <ion-item>
+        <ion-label floating primary>Fecha</ion-label>
+        <ion-input type="date" [(ngModel)]="fecha" name="fecha"></ion-input>
+      </ion-item> 
+    </ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-label floating primary>Nombre</ion-label>
+        <ion-input type="text" [(ngModel)]="nombre" name="nombre"></ion-input>
+      </ion-item> 
+    </ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-label floating primary>Costo</ion-label>
+        <ion-input type="number" [(ngModel)]="costo" name="costo"></ion-input>
+      </ion-item> 
+    </ion-list>
+
+    <input ion-button block color="primary" type="submit" value="Guardar" />
+  </form>
+</ion-content>

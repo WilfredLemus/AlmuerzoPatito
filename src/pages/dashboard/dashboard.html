@@ -1,0 +1,36 @@
+<!--
+  Generated template for the Dashboard page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Dashboard</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <span class="confirmacio" *ngIf="Habilitado">
+    <h4>Confirmar Almuerzo de Hoy {{ fecha | amDateFormat:'DD/MM/YYYY' }}</h4>
+    <h5>Desea almuerzo el dia de hoy?</h5>
+    <button ion-button block color="primary" (click)="SiAlmuerzo()">Si</button>
+    <button ion-button block color="light" (click)="NoAlmuerzo()">No</button>
+  </span>
+  <span *ngIf="Confirmado">Tu almuerzo de hoy esta confirmado</span>
+  <br>
+  <br>
+   <h2>Lista de Almuerzos Pedidos</h2>
+   <ion-list>
+      <ion-item>
+        <ion-label floating primary>Fecha</ion-label>
+        <ion-input type="date" [(ngModel)]="fecha" name="fecha"></ion-input>
+      </ion-item> 
+    </ion-list>
+  
+
+    <button ion-button (click)="nuevoAlmuerzo()">Nuevo</button>
+</ion-content>

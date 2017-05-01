@@ -1,0 +1,41 @@
+<!--
+  Generated template for the Login page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title center>Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-icon name="mail" item-left primary></ion-icon>
+      <ion-label floating primary>Email</ion-label>
+      <ion-input type="email" [(ngModel)]="form.email"></ion-input>
+    </ion-item> 
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-icon name="lock" item-left primary></ion-icon>
+      <ion-label floating primary>Contraseña</ion-label>
+      <ion-input type="password" [(ngModel)]="form.password"></ion-input>
+    </ion-item> 
+  </ion-list>
+  <button ion-button block (click)="loginWithEmail()">Ingresar <ion-icon name="log-in"></ion-icon></button>
+  <a class="link-recovery" href="#">Has perdido tu contraseña?</a>
+  <span class="login-redes">
+    <a (click)="loginwithgoogle()" class="logo-google" href=""><ion-icon name="logo-google"></ion-icon></a>
+    <a class="logo-facebook" href=""><ion-icon name="logo-facebook"></ion-icon></a>
+    <a class="logo-twitter" href=""><ion-icon name="logo-twitter"></ion-icon></a>
+  </span>
+
+  <button ion-button outline block>Crear Cuenta</button>
+</ion-content>
+
